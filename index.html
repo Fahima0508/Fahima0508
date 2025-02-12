@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <!-- Google Fonts for an elegant touch -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    /* Base Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f5; /* Light cream background */
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    /* Header */
+    header {
+      background: #4d0303;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #fff;
+    }
+
+    /* Hero Section with Gradient Background */
+    .hero {
+      background: linear-gradient(135deg, #4d0303, #c95454);
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    .cta-btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #4d0303;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .cta-btn:hover {
+      background-color: #722f37;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    section h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #8B0000;
+    }
+
+    /* Video Portfolio Section */
+    .video-portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .video-item {
+      width: 100%;
+      max-width: 500px;
+      border: 2px solid #8B0000;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .video-item video {
+      width: 100%;
+      display: block;
+    }
+
+    /* About Section with Profile Picture */
+    #about {
+      background-color: #fdf0ec;
+      padding: 60px 20px;
+    }
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #722f37;
+      margin-bottom: 20px;
+    }
+    .about-text {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    /* Contact Form */
+    form input, form textarea {
+      width: 80%;
+      max-width: 400px;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    form button {
+      padding: 15px 30px;
+      background-color: #8B0000;
+      border: none;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    form button:hover {
+      background-color: #722f37;
+    }
+
+    /* Footer */
+    footer {
+      background: #4d0303;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #fff;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2.5rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>My Portfolio</h1>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h2>Welcome</h2>
+    <p>Video & Projects Portfolio</p>
+    <a href="#portfolio" class="cta-btn">View My Work</a>
+  </div>
+
+  <!-- Video Portfolio Section -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="video-portfolio">
+      <!-- Video Item 1 -->
+      <div class="video-item">
+        <iframe src="https://drive.google.com/file/d/12-_We3uAKsM7GMSGBhsSKuQXqn5Qy7JR/preview" width="360" height="640" allow="autoplay" style="display: block; margin: 0 auto;"></iframe>
+
+            
+        </video>
+      </div>
+      <!-- Add additional video items as needed -->
+    </div>
+  </section>
+
+  <!-- About Section with Profile Picture -->
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="https://i.postimg.cc/7hDh5bXh/IMG-20250212-111344.jpg" alt="Profile Picture" class="profile-pic"> 
+    <div class="about-text">
+      <p>Hello, I'm Maimuna Begum Fahima, I transform raw footage into captivating visual stories. With a passion for the art of editing, I believe that every cut, transition, and effect should enhance the narrative and evoke emotion. My approach is both simple and elegant—focusing on clean, thoughtful edits that allow each moment to shine.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Maimuna Begum Fahima" required>
+      <br>
+      <input type="email" placeholder="fahimajashim2001@gmail.com" required>
+      <br>
+      <textarea placeholder="Every great video starts with an idea. Let’s make yours unforgettable!" required></textarea>
+      <br>
+      <button type="submit" class="cta-btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Maimuna Begum Fahima. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
